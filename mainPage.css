@@ -1,0 +1,175 @@
+* {
+    /* * means all element*/
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 62.5%; /* browers default: 16px, 16px * 62.5 = 10px = 1rem  */
+  }
+  body {
+    height: 100vh;
+    font: 1.6rem Helvetica, Arial; /* if no Helvetica, use Arial*/
+    margin: 0; /* default body contain margin*/
+  }
+  a {
+    color: #000000;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #f08040;
+  }
+  button {
+    cursor: pointer;
+  }
+  input,
+  button {
+    font: 1.8 rem Helvetica;
+    padding: 1rem;
+    border: 0.2rem #808080 solid;
+    border-radius: 0.6rem;
+  }
+  input:hover,
+  button:hover {
+    border: 0.2rem #404040 solid;
+  }
+  button.primary {
+      background-color: #111f53;
+      color: white;
+  }
+  .fullwid {
+    width: 100%;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-areas:    /* 3 rows*/
+      "header"
+      "main"
+      "footer";
+    grid-template-columns: 1fr; /*1 fragment*/
+    grid-template-rows: 5rem 1fr 5rem; /*1st row , main: whole screen, footer*/
+    height: 100%;
+  }
+  
+  .list {
+    background-color: #808080;
+    height: 250px;
+    width: 300px;
+    list-style-type: none;
+    text-align: justify;
+    border: 2px solid #f0c040;
+    top: 5rem;
+    right: 0;
+    position: absolute;
+    transition: 1s all;
+    transform: scale(0);
+    transform-origin: 100% 0%;
+  }
+  .list h3 {
+    text-align: center;
+  }
+  /* course */
+  .courses {
+    display: flex; /* same row (next to each other)*/ 
+    flex-wrap: wrap; /*responsive*/
+    list-style-type: none; /*no bullet point before li*/
+    padding: 0;
+    margin: 0;
+    justify-content: center; /*put the staff next to each other*/
+  }
+  .courses li {
+    flex: 0 1 30rem; /*max width 300 pixel*/
+    margin: 1rem; /**/
+    margin-bottom: -110;
+    height: 42rem;
+    border-top: 0.2rem #e0e0e0 solid;  /*2 pixel*/
+  }
+  .course {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 45%;
+      background: #6177c1;
+      color: #ffffff;
+      border: 5px solid #111f53;
+      padding: 1.5rem;
+  }
+  .course img {
+    object-fit: cover;
+    max-height: 21rem;
+    max-width: 22rem;
+    margin-top: 2rem;
+  }
+  
+  .course-id {
+    font-size: 2.5rem;
+  }
+  
+  .content {
+    padding: 1rem;
+  }
+  
+  /* Form */
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .form-items {
+    display: flex;
+    flex-direction: column;
+    width: 32rem;
+    padding: 2rem;
+    border: 0.1rem #c0c0c0 solid;
+    border-radius: 0.5rem;
+    list-style-type: none;
+  }
+  .form-items li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  .form-container h1 {
+    font-size: 2.5rem;
+  }
+  .pwform {
+    margin-left: 1 rem;
+  }
+  table{
+    width: 100%;
+  }
+  th{
+    text-align: left;
+  }
+  tbody > tr:nth-child(odd){
+    background-color: #f0f0f0;
+  }
+  td{
+    padding: 0.5rem;
+  }
+  .search{
+      margin-left: 25em;
+      margin-top: 120;
+  }
+  #myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myUL li a {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6; /* Grey background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+  }
+  

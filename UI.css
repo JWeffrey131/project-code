@@ -1,0 +1,42 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: #f1f4ff;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    top: 0;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #111f53;
+    padding: 15px ;
+    transition: all .50s ease;
+}
+.logo{
+    color: #fff;
+    font-size: 20px;
+}
+
+.btn{
+    border: 2px solid black;
+    background: white ;
+    color: black;
+    font-size: 15px;
+    margin-right: 50px;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.bar{
+  margin-left: 60px;
+}
+
+.removeLineBreak{
+   display: inline-block;
+  
+}
